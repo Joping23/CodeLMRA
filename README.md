@@ -20,7 +20,7 @@ Example of running the LMRA on Adult dataset, while training a neural regression
 
 Go to LocalModelReconstructionAttack/Adult&Synthetic/
 
-python3 main.py adult --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.001 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
+python3 main.py adult --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.05 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
 
 Example of running the LMRA on Flight Prices dataset, while training a neural network model.
 
