@@ -150,6 +150,7 @@ for i in range(0,10)  :
         losse = criterion(output, F.one_hot(y_s[j].to(torch.int64),2)[:,0,:].float())
         losses_last[i,j] = losse
         
+print("Predicted Sources using last returned model")
         
 print(np.argmin(losses_last,axis=0))
 
