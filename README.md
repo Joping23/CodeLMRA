@@ -20,13 +20,13 @@ Example of running the LMRA on Adult dataset, while training a neural regression
 
 Go to LocalModelReconstructionAttack/Adult&Synthetic/
 
-python main.py adult --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.01 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
+python3 main.py adult --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.001 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
 
 Example of running the LMRA on Flight Prices dataset, while training a neural network model.
 
 Go to LocalModelReconstructionAttack/Flight_Prices
 
-python main.py flightPrices --model neuralReg --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.0001 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
+python3 main.py flightPrices --model neuralReg --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.00001 --adv_lr 0.0001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
 
 Example of running the LMRA on Leaf Synthetic dataset, while training a neural network model.
 
@@ -34,10 +34,10 @@ First, generate the data:
 
 Go to LocalModelReconstructionAttack/Adult&Synthetic/ and launch:
 
-python federated_learning/data/synthetic.py --num_workers 10 --dimension 100 --num_clusters 5 --num_classes 2
+python3 federated_learning/data/synthetic.py --num_workers 10 --dimension 100 --num_clusters 5 --num_classes 2
 
 then launch:
-python main.py synthetic --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.001 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
+python3 main.py synthetic --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.001 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
 
 Example of running the LMRA on AT&T dataset, while training a neural network model.
 
@@ -45,16 +45,16 @@ First split the dataset:
 
 Go to LocalModelReconstructionAttack/AT&T and launch:
 
-Python federated_learning/data/data_faces/create_faces.py
+python3 federated_learning/data/data_faces/create_faces.py
 Go to LocalModelReconstructionAttack/AT&T and launch:
 
-python main.py faces --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.05 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
+python3 main.py faces --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.05 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
 
 Example of launching the model-based AIA on FlightPrices:
 
 We first need to make sure that the LMRA was previously launched, then go to the folder ExpFlightPrices and launch AIA.py:
 
-python AIA.py
+python3 AIA.py
 
 The procedure is similar for Adult and LeafSynthetic datasets.
 
@@ -62,7 +62,7 @@ Example of launching the model-based SIA on FlightPrices:
 
 We need first to make sure that the LMRA was previously launched, then go to the folder ExpFlightPrices and launch SIA.py
 
-python SIA.py
+python3 SIA.py
 
 The procedure is similar for Adult and LeafSynthetic datasets.
 
@@ -70,7 +70,7 @@ Example of launching the model-based SRA on AT&T:
 
 We first need to make sure that the LMRA was previously launched, then go to the folder ExpAT&T and launch SRA.py:
 
-python SRA.py
+python3 SRA.py
 
 
 
