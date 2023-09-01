@@ -38,13 +38,13 @@ Example of running the LMRA on Adult dataset, while training a neural regression
 
 Go to LocalModelReconstructionAttack/Adult&Synthetic/
 
-python3 main.py adult --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.05 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
+python3 main.py adult --model neural --num_workers 10 --num_rounds 1000 --bz 512 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.05 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000 --fit_by_epoch
 
 Example of running the LMRA on Flight Prices dataset, while training a neural network model.
 
 Go to LocalModelReconstructionAttack/Flight_Prices
 
-python3 main.py flightPrices --model neuralReg --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.00001 --adv_lr 0.0001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
+python3 main.py flightPrices --model neuralReg --num_workers 10 --num_rounds 1000 --bz 512 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.00001 --adv_lr 0.0001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000--fit_by_epoch
 
 Example of running the LMRA on Leaf Synthetic dataset, while training a neural network model.
 
@@ -55,7 +55,7 @@ Go to LocalModelReconstructionAttack/Adult&Synthetic/ and launch:
 python3 federated_learning/data/synthetic.py --num_workers 10 --dimension 100 --num_clusters 5 --num_classes 2
 
 then launch:
-python3 main.py synthetic --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.001 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
+python3 main.py synthetic --model neural --num_workers 10 --num_rounds 1000 --bz 512 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.001 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000 --fit_by_epoch
 
 Example of running the LMRA on AT&T dataset, while training a neural network model.
 
@@ -66,7 +66,7 @@ Go to LocalModelReconstructionAttack/AT&T and launch:
 python3 federated_learning/data/data_faces/create_faces.py
 Go to LocalModelReconstructionAttack/AT&T and launch:
 
-python3 main.py faces --model neural --num_workers 10 --num_rounds 1000 --bz 256 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.05 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000
+python3 main.py faces --model neural --num_workers 10 --num_rounds 1000 --bz 512 --num_local_steps 1 --device "cuda" --gnetwork_num_epochs 10000 --num_trials_to_decode 1 --lr 0.05 --adv_lr 0.001 --gnetwork_features 1000 --start_point global_model --decoded_epochs 20000 --fit_by_epoch
 
 
 
