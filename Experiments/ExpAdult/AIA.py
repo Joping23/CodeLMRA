@@ -148,7 +148,7 @@ for j in range(0,10) :
     logits = torch.randn((m,2)).requires_grad_(True)
     
     #print(logits[:,1].sum())
-    optimizer = torch.optim.SGD([logits],lr=0.01)
+    optimizer = torch.optim.SGD([logits],lr=0.001)
     for iter in range(0,500):
         optimizer.zero_grad()
         grad_diff = 0 
