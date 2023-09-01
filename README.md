@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ## Datasets description : 
 
 
-We consider five datasets: Flight Prices for the regression task, Adult, Leaf Synthetic, AT\&T dataset for the image classification tasks. For additional details about these datasets and how we split them in a FL scenario please refer to our paper.
+We consider five datasets: Flight Prices for the regression task, Adult, Leaf Synthetic, AT\&T and CIFAR-10 dataset for the image classification tasks. For additional details about these datasets and how we split them in a FL scenario please refer to our paper.
 
 For all the tabular datasets, the model is a neural network with 3 hidden layers (256 neurons per layer) followed by an ReLU activation layer. For the image datasets the model is a CNN of 6 convolutional layers followed by two fully connected layers
 
@@ -92,7 +92,7 @@ Arguments of the LMRA:
 ## Attribute Inference Attacks : 
 
 
-Example of launching the model-based AIA on FlightPrices:
+Example of launching the AIA on FlightPrices:
 
 We first need to make sure that the LMRA was previously launched, then go to the folder ExpFlightPrices and launch AIA.py:
 
@@ -103,7 +103,7 @@ The procedure is similar for Adult and LeafSynthetic datasets.
 
 ## Source Inference Attacks : 
 
-Example of launching the model-based SIA on FlightPrices:
+Example of launching the SIA on FlightPrices:
 
 We need first to make sure that the LMRA was previously launched, then go to the folder ExpFlightPrices and launch SIA.py
 
@@ -113,7 +113,7 @@ The procedure is similar for Adult and LeafSynthetic datasets.
 
 
 ## Sample Reconstruction Attacks : 
-Example of launching the model-based SRA on AT&T:
+Example of launching the SRA on AT&T:
 
 We first need to make sure that the LMRA was previously launched, then go to the folder ExpAT&T and launch SRA.py:
 
