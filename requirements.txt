@@ -1,0 +1,24 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-arm64
+
+
+
+glob2==0.7
+lime==0.2.0.1
+numpy==1.23.5
+opacus==1.1.2
+pandas==1.5.3
+pandocfilters==1.5.0
+pillow==9.4.0
+scikit-learn==1.2.1
+scipy==1.10.0
+seaborn==0.12.2
+statsmodels==0.13.5
+tensorboard
+seaborn
+torch
+torchvision
+tensorboard
+seaborn 
+

@@ -1,0 +1,1 @@
+{'num_workers': 10, 'num_clusters': 5, 'num_classes': 2, 'dimension': 100, 'sigma': 0.1, 'strategy': 'even', 'seed': 931231}
