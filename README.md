@@ -3,10 +3,15 @@
 
 
 First, we start by providing some examples on how to launch our Local Model Reconstruction Attack (LMRA). Second, we describe the steps that are required to trigger the proposed model-based Attribute Inference Attack (AIA), Source Inference Attack (SIA), and Sample Reconstruction Attack (SRA).
+
+
 The first step is to set the environment:
 conda create --name my_env
+
 conda activate my_env
+
 conda install pip
+
 pip install -r requirements.txt
 
 
