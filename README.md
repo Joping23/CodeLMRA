@@ -100,12 +100,12 @@ python3 AIA.py
 
 The procedure is similar for Adult and LeafSynthetic datasets.
 
-Example of launching the model-based SIA on FlightPrices:
-
-We need first to make sure that the LMRA was previously launched, then go to the folder ExpFlightPrices and launch SIA.py
 
 ## Source Inference Attacks : 
 
+Example of launching the model-based SIA on FlightPrices:
+
+We need first to make sure that the LMRA was previously launched, then go to the folder ExpFlightPrices and launch SIA.py
 
 python3 SIA.py
 
